@@ -1,0 +1,177 @@
+/* BLOG HERO */
+.blogHero {
+  background-image: url(@assets/images/fruit-and-vegetables-and-protection.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroWrapper {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  max-width: 100% !important;
+  padding: 40px 20px;
+}
+
+.heroContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroContent h1 {
+  color: var(--pure-white);
+}
+
+.authorDetails {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.authorImg img {
+  max-width: 70px;
+  border-radius: 50%;
+}
+
+.authorContent ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.authorContent ul li {
+  font-size: 18px;
+  font-family: var(--body-font);
+  color: var(--pure-white);
+}
+
+/* BLOG CONTENT */
+.content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.breadcrumbs {
+  padding-bottom: 30px;
+}
+
+.breadcrumbs a {
+  font-family: var(--heading-font) !important;
+  color: var(--golden-olive);
+}
+
+.breadcrumbs span {
+  font-family: var(--heading-font);
+  color: var(--charcoal-gray);
+  font-size: 16px;
+}
+
+.content h3 {
+  color: var(--deep-forest-green);
+  margin-bottom: 30px;
+}
+
+.content p {
+  color: var(--charcoal-gray);
+}
+
+.photosInline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 40px 0;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.tags h4 {
+  font-size: 30px;
+  font-family: var(--heading-font);
+  color: var(--deep-forest-green);
+  margin: 0;
+}
+
+.tags span {
+  border: 1px solid var(--pure-black);
+  padding: 5px 25px;
+}
+
+.tags a {
+  color: var(--pure-black) !important;
+  font-family: var(--heading-font);
+  font-size: 15px;
+}
+
+.tags a:hover {
+  color: var(--olive-wood) !important;
+}
+
+/* AUTHOR BOX */
+.authorBox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--silver-gray);
+}
+
+.authorBoxImg img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+
+.authorMeta h6 {
+  font-family: var(--heading-font);
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+  color: var(--deep-forest-green);
+}
+
+.authorMeta p {
+  color: var(--charcoal-gray);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .heroWrapper {
+    min-height: 400px;
+  }
+
+  .photosInline {
+    grid-template-columns: 1fr;
+  }
+
+  .authorContent ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .heroWrapper {
+    min-height: 320px;
+  }
+}

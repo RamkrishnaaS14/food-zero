@@ -1,0 +1,460 @@
+/* HERO */
+.hero {
+  position: relative;
+  background: var(--deep-forest-green);
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.sectionWrapper {
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.dishImg {
+  position: absolute;
+
+  width: 550px;
+  height: 520px;
+
+  top: 90px;
+  right: 0;
+
+  z-index: 1;
+}
+
+.heroContent {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+
+  width: 55%;
+  z-index: 2;
+  max-width: 85%;
+}
+
+.heroContent h1,
+.heroContent p {
+  color: var(--pure-white);
+}
+
+.heroContent h1 {
+  font-size: clamp(70px, 6vw, 95px);
+  line-height: 0.95;
+  max-width: 700px;
+}
+
+.heroContent p {
+  max-width: 400px;
+}
+
+/* Spice bowls */
+.icons {
+  position: absolute;
+  left: 520px;
+  bottom: 70px;
+
+  z-index: 3;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.iconWrapper img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-left: -25px;
+  gap: 3;
+}
+
+.iconWrapper img:first-child {
+  margin-left: 0;
+}
+/* HERO INNER */
+.heroInner {
+  background: var(--deep-forest-green);
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.heroInnerWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.heroLeft {
+  flex-basis: 50%;
+}
+
+.heroLeft img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.heroRight {
+  flex-basis: 30%;
+}
+
+.heroRight img {
+  width: 100%;
+}
+
+.heroInner h3,
+.heroInner p {
+  color: var(--pure-white);
+}
+
+/* OUR MENU */
+.ourMenu {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ourMenu::after {
+  content: '';
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(@assets/images/flower-icon-cropped.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.titleBox {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.titleBox h2 {
+  font-weight: 700;
+}
+
+.menuContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+/* EXCELLENT */
+.excellent {
+  background: var(--sage-mist);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.columnBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  align-items: center;
+}
+
+.colLeft img {
+  width: 100%;
+  display: block;
+}
+
+.colRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.leafIcon {
+  max-width: 250px;
+  display: block;
+}
+
+/* CTA */
+.cta {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.threeColumns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+
+/* BLOG */
+.blogSec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+/* CALORIES ENERGY BALANCE */
+.calories {
+  background: var(--pure-white);
+  padding: 70px 0;
+}
+
+.caloriesHeader {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 50px;
+}
+
+.caloriesHeader h2 {
+  font-weight: 700;
+  color: var(--pure-black);
+  margin-bottom: 12px;
+}
+
+.caloriesHeader p {
+  color: var(--charcoal-gray);
+  margin: 0;
+}
+
+.caloriesCards {
+  max-width: 1180px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.caloriesCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.caloriesCard img {
+  width: 100%;
+  height: 500px; /* was 320px */
+  object-fit: cover;
+  display: block;
+}
+.cardOverlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardOverlay h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.cardOverlay span {
+  font-size: 28px;
+}
+
+.cardLabel {
+  font-family: var(--heading-font);
+  color: var(--deep-forest-green);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cardArrow {
+  color: var(--pure-black);
+  font-size: 18px;
+}
+
+/* Testimonial */
+.testimonialWrap {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.testimonialLeft {
+  flex: 1;
+}
+
+.quoteText {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--body-font);
+  color: var(--pure-black);
+  line-height: 1.55;
+  margin-bottom: 32px;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.authorAvatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.authorName {
+  display: block;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--pure-black);
+  margin-bottom: 2px;
+}
+
+.authorRole {
+  display: block;
+  font-size: 13px;
+  color: var(--charcoal-gray);
+}
+
+.testimonialNav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--charcoal-gray);
+  padding: 4px 6px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.navBtn:hover {
+  color: var(--deep-forest-green);
+}
+
+.navCount {
+  font-family: var(--body-font);
+  color: var(--charcoal-gray);
+  font-size: 15px;
+  min-width: 32px;
+  text-align: center;
+}
+
+.testimonialRight {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.quoteDecor {
+  font-size: 220px;
+  font-family: Georgia, serif;
+  color: var(--sage-mist);
+  line-height: 1;
+  display: block;
+  opacity: 0.8;
+  user-select: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dishImg {
+    width: 350px;
+    max-height: 350px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .heroInnerWrapper {
+    flex-direction: column;
+  }
+
+  .heroLeft,
+  .heroRight {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .menuContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .columnBoxes {
+    grid-template-columns: 1fr;
+  }
+
+  .threeColumns {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .blogGrid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .caloriesCards {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialRight {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .dishImg {
+    float: none;
+    width: 100%;
+    max-height: none;
+    margin-top: 20px;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  .heroInner {
+    padding-top: 40px;
+  }
+
+  .testimonialFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

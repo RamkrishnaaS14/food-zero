@@ -1,0 +1,117 @@
+.menuHero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url(@assets/images/menu-hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroContent h1,
+.heroContent p {
+  color: var(--pure-white);
+}
+
+.menuContent {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.menuContent::before {
+  content: '';
+  width: 250px;
+  height: 200px;
+  background-image: url(@assets/images/starter-background-icon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  transform: translateX(-30%);
+}
+
+.titleBox {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.titleBox h2 {
+  color: var(--deep-forest-green);
+}
+
+.titleBox p {
+  color: var(--charcoal-gray);
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  align-items: start;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.singleItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.price p {
+  text-align: right;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: var(--deep-forest-green);
+}
+
+.itemDivider {
+  display: block;
+  border-bottom: 2px dashed var(--charcoal-gray);
+  margin-bottom: 20px;
+}
+
+.menuDetails {
+  padding-right: 15%;
+}
+
+.menuDetails h3 {
+  color: var(--deep-forest-green);
+}
+
+.menuDetails p {
+  color: var(--charcoal-gray);
+  margin: 0;
+}
+
+.imageBox img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .menuHero {
+    min-height: 400px;
+  }
+
+  .twoColumns {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .menuDetails {
+    padding-right: 0;
+  }
+
+  .menuContent::before {
+    display: none;
+  }
+}

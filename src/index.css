@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rufina:wght@400;700&display=swap');
+
+:root {
+  --heading-font: "Rufina", serif;
+  --body-font: "Lato", sans-serif;
+  --deep-forest-green: #233000;
+  --olive-wood: #5E6600;
+  --golden-olive: #9CAA00;
+  --sage-mist: #EBF0E4;
+  --pure-black: #000000;
+  --charcoal-gray: #4D4D4D;
+  --silver-gray: #B0B0B0;
+  --pure-white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--body-font);
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.section-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}

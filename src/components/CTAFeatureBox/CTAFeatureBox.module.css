@@ -1,0 +1,28 @@
+.innerColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.iconWrapper img {
+  width: 100%;
+  max-width: 170px;
+}
+
+.innerColumn h4 {
+  font-family: var(--heading-font);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  margin: 0;
+}
+
+.innerColumn p {
+  text-align: center;
+  color: var(--charcoal-gray);
+  margin: 0;
+}

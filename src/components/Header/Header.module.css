@@ -1,0 +1,207 @@
+.header {
+  background-color: var(--deep-forest-green);
+  padding: 20px;
+  color: var(--pure-white);
+  position: relative;
+  z-index: 100;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.headerRow {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  max-width: 150px;
+  cursor: pointer;
+  display: block;
+}
+
+.menuRight {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.phone {
+  color: var(--pure-white) !important;
+  font-size: 16px;
+  font-family: var(--body-font);
+  letter-spacing: 0.02em;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--pure-white);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.reservationsBtn {
+  color: var(--pure-white) !important;
+  font-family: var(--body-font);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--pure-white);
+  padding: 10px 22px;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.reservationsBtn:hover {
+  background: var(--pure-white);
+  color: var(--deep-forest-green) !important;
+}
+
+/* Full-screen nav overlay */
+.menuContent {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-image:
+    linear-gradient(rgba(35, 48, 0, 0.88), rgba(35, 48, 0, 0.88)),
+    url(@assets/images/menu-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.menuOpen {
+  transform: translateY(0%);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.closeBtn {
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--pure-white);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.navMenu {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+  clear: both;
+}
+
+.navMenu > li {
+  margin-bottom: 0.25rem;
+}
+
+.navLink {
+  font-family: var(--heading-font) !important;
+  color: var(--pure-white) !important;
+  font-size: 40px;
+  line-height: 55px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.navLink::before {
+  content: '• ';
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.navTitle {
+  font-family: var(--heading-font);
+  color: var(--pure-white);
+  font-size: 40px;
+  line-height: 55px;
+  display: block;
+}
+
+.navTitle::before {
+  content: '• ';
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.navLink:hover,
+.navLinkActive {
+  color: var(--golden-olive) !important;
+}
+
+.subNavMenu {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.subNavMenu li {
+  margin-bottom: 0;
+}
+
+.subNavLink {
+  font-family: var(--heading-font) !important;
+  color: var(--pure-white) !important;
+  font-size: 22px;
+  line-height: 38px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.subNavLink:hover,
+.subNavLink.navLinkActive {
+  color: var(--golden-olive) !important;
+}
+
+@media (max-width: 580px) {
+  .navLink,
+  .navTitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .subNavLink {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .wrapper {
+    padding: 30px 20px;
+  }
+}

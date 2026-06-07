@@ -1,0 +1,17 @@
+.blogSec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
